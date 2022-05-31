@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+        background-color: #DBF9FC;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+        
+    </style>
+    <!-- <center>
+       
+        </center> -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!-- <img src="{{ MEDIA_ROOT }}sign.png" alt="404" class="center"> -->
+        <br>
+        <center>
+        <span style="color: darkgreen;">Рассылка прошла успешно окно закроется через 3 секунды</span>
+        </center>
+        <script type="text/javascript">
+            
+
+
+                function sleep (time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+                }
+
+                // Usage!
+                sleep(2000).then(() => {
+                    window.open('','_parent',''); 
+                     window.close();
+            });
+        </script>
+</body>
+</html>
