@@ -66,7 +66,7 @@ def post_response(message):
     pt.click()
     
     pyperclip.copy(message)
-    # pt.typewrite(message, interval=.01)
+    
     pt.hotkey('ctrl', 'v')
     pt.typewrite("\n", interval=.01)
 
